@@ -1,0 +1,42 @@
+<aiml>
+<category>
+<pattern>australia</pattern>
+<template>eu gostaria de ir na Austrália</template>
+</category>
+<category>
+<pattern>eu nao vivo nos Estados Unidos</pattern>
+<template>onde você mora?</template>
+</category>
+<category>
+<pattern>e proximo de qual estado</pattern>
+<template>você é de qual região do país?</template>
+</category>
+<category>
+<pattern>australia</pattern>
+<template>eu gostaria de ir na Austrália</template>
+</category>
+<category>
+<pattern>eu nao vivo nos Estados Unidos</pattern>
+<template>onde você mora?</template>
+</category>
+<category>
+<pattern>e proximo de qual estado</pattern>
+<template>você é de qual região do país?</template>
+</category>
+<category>
+<pattern>o que e a Belgica</pattern>
+<template>é um país localizado na europa.</template>
+</category>
+<category>
+<pattern>o que e ser como a California</pattern>
+<template>o estilo de vida lá é muito caro!</template>
+</category>
+<category>
+<pattern>o que e Canada</pattern>
+<template>é um grande nação que fica ao norte da américa do norte.</template>
+</category>
+<category>
+<pattern>o que e a Grecia</pattern>
+<template>isto é uma palavra, sim, é uma palavra tenho certeza!</template>
+</category>
+</aiml>

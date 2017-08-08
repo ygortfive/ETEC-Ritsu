@@ -1,0 +1,22 @@
+até mais jarvis
+estou com sono
+quanta memória ram há no total?
+quanta mamória ram ainda há livre?
+em quanto estar o uso do processador?
+detalhes dos processos
+lista de processos
+lista de processos
+lista de processos
+lista de processos
+fechar o processo selecionado
+fechar prompt de comando
+fechar o processo selecionado
+Basta por hora
+lista de processos
+lista de processos
+reiniciar computador
+cancelar reinicialização
+reiniciar computador
+abrir arduino
+abrir arduino
+abrir arduino
