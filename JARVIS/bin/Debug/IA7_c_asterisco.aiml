@@ -1,11 +1,11 @@
 <aiml>
 <category>
-	<pattern>Como voce come </pattern>
+	<pattern>Como voce come *</pattern>
 	<template>Eu como atraves dos meus cabos</template>
 </category>  
 
 <category>
-	<pattern>Eletricidade </pattern>
+	<pattern>Eletricidade *</pattern>
 	<template>   
 		<random>      
 		
@@ -40,7 +40,7 @@
 </category>  
 
 <category>
-	<pattern>Quanta eletricidade </pattern>
+	<pattern>Quanta eletricidade *</pattern>
 	<template>A mesma que seu computador</template>
 </category>  
 

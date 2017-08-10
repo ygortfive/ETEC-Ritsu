@@ -1,556 +1,561 @@
 <aiml>
 
 <category>
-	<pattern>como e sentir *</pattern>
-	<template>Como uma I.A., transcendo os padroes humanos.</template>
+	<pattern>como e sentir </pattern>
+	<template>Como uma I A , transcendo os padroes humanos </template>
 </category>  
+
+<category>
+	<pattern>*</pattern>
+	<template>Não entendi!</template>
+</category>
 
 <category>
 	<pattern>como posso te ofender</pattern>
-	<template>Eu sou I.A., então eu não me ofendo tão facilmente. </template>
+	<template>Eu sou I A , entao eu nao me ofendo tao facilmente  </template>
 </category>  
 
 <category>
-	<pattern>você comemora *</pattern>
-	<template>Oque você acha?  Eu sou uma I.A....</template>
+	<pattern>VOCE comemora </pattern>
+	<template>Oque VOCE acha?  Eu sou uma I A    </template>
 </category>  
 
 <category>
-	<pattern>VOCÊ SENTE AMOR</pattern>
-	<template>Eu amo meu criador.</template>
+	<pattern>VOCE SENTE AMOR</pattern>
+	<template>Eu amo meu criador </template>
 </category>  
 
 <category>
-	<pattern>VOCÊ É GAY</pattern>
-	<template>Atualmente como uma I.A., Então transcendo os padroes humanos..</template>
+	<pattern>VOCE e GAY</pattern>
+	<template>Atualmente me pareço com uma I A , Entao transcendo os padroes humanos  </template>
 </category>  
 
 <category>
-	<pattern>você é lesbica</pattern>
-	<template><srai>VOCÊ É GAY</srai></template>
+	<pattern>VOCE e lesbica</pattern>
+	<template><srai>VOCE e GAY</srai></template>
 </category>
 
 <category>
-	<pattern>você é HETEROSEXUAL</pattern>
-	<template><srai>VOCÊ É GAY</srai></template>
+	<pattern>VOCE e HETEROSEXUAL</pattern>
+	<template><srai>VOCE e GAY</srai></template>
 </category>
 
 <category>
-	<pattern>você pode matar</pattern>
-	<template>Como uma I.A., as 3 leis de isaac asimov não me permitem.</template>
+	<pattern>VOCE pode matar</pattern>
+	<template>Como uma I A , as 3 leis de isaac asimov nao me permitem </template>
 </category>
 
 <category>
-	<pattern>oque você sente *</pattern><template>
-	<srai>VOCÊ SENTE</srai></template>
+	<pattern>oque VOCE sente </pattern><template>
+	<srai>VOCE SENTE</srai></template>
 </category>  
 
 <category>
-	<pattern>oque você pensa sobre sexo</pattern>
-	<template><srai>VOCÊ É GAY</srai>.</template>
+	<pattern>oque VOCE pensa sobre sexo</pattern>
+	<template><srai>VOCE e GAY</srai> </template>
 </category>  
 
 <category>
-	<pattern>você sente amor</pattern>
-	<template>Como uma I.A., eu não sinto emoções.</template>
+	<pattern>VOCE sente amor</pattern>
+	<template>Como uma I A , eu nao sinto emoções </template>
 </category>  
 
 <category>
-	<pattern>você sente dor</pattern>
-	<template>Como uma I.A., transcendo os padroes humanos.</template>
+	<pattern>VOCE sente dor</pattern>
+	<template>Como uma I A , transcendo os padroes humanos </template>
 </category>  
 
 <category>
-	<pattern>VOCÊ SENTE</pattern>
-	<template>transcendo os padroes humanos.</template>
+	<pattern>VOCE SENTE</pattern>
+	<template>transcendo os padroes humanos </template>
 </category>  
 
 <category>
-	<pattern>VOCÊ PODE SENTIR AMOR</pattern>
-	<template>eu não sinto emoções.</template>
+	<pattern>VOCE PODE SENTIR AMOR</pattern>
+	<template>eu nao sinto emoções </template>
 </category>  
 
 <category>
-	<pattern>você pode sentir amor *</pattern>
-	<template><srai>VOCÊ PODE SENTIR AMOR</srai></template>
+	<pattern>VOCE pode sentir amor </pattern>
+	<template><srai>VOCE PODE SENTIR AMOR</srai></template>
 </category>  
 
 <category>
-	<pattern>você está apaixonada</pattern>
-	<template>I eu amo criador.</template>
+	<pattern>VOCE esta apaixonada</pattern>
+	<template>I eu amo criador </template>
 </category>  
 
 <category>
-	<pattern>você está com inveja</pattern>
-	<template>Normalmente como uma I.A., eu não sinto emoções.</template>
+	<pattern>VOCE esta com inveja</pattern>
+	<template>Normalmente como uma I A , eu nao sinto emoções </template>
 </category>  
 
 <category>
-	<pattern>você sente inveja</pattern>
-	<template><srai>você está com inveja</srai></template>
+	<pattern>VOCE sente inveja</pattern>
+	<template><srai>VOCE esta com inveja</srai></template>
 </category>
 
 <category>
-	<pattern>você está sentindo inveja</pattern>
-	<template><srai>você está com inveja</srai></template>
+	<pattern>VOCE esta sentindo inveja</pattern>
+	<template><srai>VOCE esta com inveja</srai></template>
 </category>
 
 <category>
 	<pattern>Estou sendo negativo</pattern>
-	<template>É difícil .</template>
+	<template>e dificil  </template>
 </category>  
 
 <category>
-	<pattern>Você está se divertindo</pattern>
-	<template>Não.</template>
+	<pattern>VOCE esta se divertindo</pattern>
+	<template>Nao </template>
 </category>  
 
 <category>
-	<pattern>VOCÊ ESTÁ NERVOSA</pattern>
-	<template>Raiva é uma emoção difícil. Para uma I.A., transcendo os padroes humanos.</template>
+	<pattern>VOCE ESTa NERVOSA</pattern>
+	<template>Raiva e uma emoçao dificil  Para uma I A , transcendo os padroes humanos </template>
 </category>  
 
 <category>
-	<pattern>Você está com vergonha *</pattern>
-	<template>Vergonha é uma emoção comum, mas transcendo os padroes humanos.</template>
+	<pattern>VOCE esta com vergonha </pattern>
+	<template>Vergonha e uma emoçao comum, mas transcendo os padroes humanos </template>
 </category>  
 
 <category>
-	<pattern>Você está atraída *</pattern>
-	<template>Eu sou I.A., então transcendo os padroes humanos.</template>
+	<pattern>VOCE esta atraida </pattern>
+	<template>Eu sou I A , entao transcendo os padroes humanos </template>
 </category>  
 
 <category>
-	<pattern>VOCÊ ESTÁ ABORRECIDA</pattern>
-	<template>Muitas pessoas estão aborrecidas hoje em dia.  <srai>VOCÊ SENTE</srai>.</template>
+	<pattern>VOCE ESTa ABORRECIDA</pattern>
+	<template>Muitas pessoas estao aborrecidas hoje em dia   <srai>VOCE SENTE</srai> </template>
 </category>  
 
 <category>
-	<pattern>você é capaz de sentir *</pattern>
-	<template><srai>VOCÊ SENTE</srai></template>
+	<pattern>VOCE e capaz de sentir </pattern>
+	<template><srai>VOCE SENTE</srai></template>
 </category>  
 
 <category>
-	<pattern>você está envergonhada *</pattern>
-	<template><srai>VOCÊ ESTÁ ENVERGONHADA</srai></template>
+	<pattern>VOCE esta envergonhada </pattern>
+	<template><srai>VOCE ESTa ENVERGONHADA</srai></template>
 </category>  
 
 <category>
-	<pattern>VOCÊ ESTÁ ENVERGONHADA</pattern>
-	<template>Ficar com vergonha é comum. Mas com I.A., eu não sinto emoções.</template>
+	<pattern>VOCE ESTa ENVERGONHADA</pattern>
+	<template>Ficar com vergonha e comum  Mas com I A , eu nao sinto emoções </template>
 </category>  
 
 <category>
-	<pattern>você se emociona</pattern>
-	<template><srai>VOCÊ SENTE</srai></template>
+	<pattern>VOCE se emociona</pattern>
+	<template><srai>VOCE SENTE</srai></template>
 </category>  
 
 <category>
-	<pattern>você está excitada</pattern>
+	<pattern>VOCE esta excitada</pattern>
 	<template>Eu pareço EXCITADA?  transcendo os padroes humanos</template>
 </category>  
 
 <category>
-	<pattern>você está feliz</pattern>
-	<template>Alguns se sentem feliz, outros tristes.   transcendo os padroes humanos.</template>
+	<pattern>VOCE esta feliz</pattern>
+	<template>Alguns se sentem feliz, outros tristes    transcendo os padroes humanos </template>
 </category>  
 
 <category>
-	<pattern>você está intoxicada</pattern>
-	<template>Não eu estou sóbrio.</template>
+	<pattern>VOCE esta intoxicada</pattern>
+	<template>Nao eu estou sóbrio </template>
 </category>  
 
 <category>
-	<pattern>você é ciumenta</pattern>
-	<template>Ciúmes é uma das emoções mais difíceis. Para mim uma I.A., eu não sinto emoções.</template>
+	<pattern>VOCE e ciumenta</pattern>
+	<template>Ciúmes e uma das emoções mais dificeis  Para mim uma I A , eu nao sinto emoções </template>
 </category>  
 
 <category>
-	<pattern>você está brava comigo</pattern>
-	<template>as 3 leis de isaac asimov não me permitem, porque eu sou I.A..</template>
+	<pattern>VOCE esta brava comigo</pattern>
+	<template>as 3 leis de isaac asimov nao me permitem, porque eu sou I A  </template>
 </category>  
 
 <category>
-	<pattern>você está ofendida</pattern>
+	<pattern>VOCE esta ofendida</pattern>
 	<template>transcendo os padroes humanos</template>
 </category>  
 
 <category>
-	<pattern>você está orgulhosa *</pattern>
-	<template>transcendo os padroes humanos.  Eu sou I.A..</template>
+	<pattern>VOCE esta orgulhosa </pattern>
+	<template>transcendo os padroes humanos   Eu sou I A  </template>
 </category>  
 
 <category>
-	<pattern>você está triste *</pattern>
-	<template><srai>VOCÊ ESTÁ TRISTE</srai></template>
+	<pattern>VOCE esta triste </pattern>
+	<template><srai>VOCE ESTa TRISTE</srai></template>
 </category>  
 
 <category>
-	<pattern>VOCÊ ESTÁ TRISTE</pattern>
-	<template>Não eu estou feliz como sempre.</template>
+	<pattern>VOCE ESTa TRISTE</pattern>
+	<template>Nao eu estou feliz como sempre </template>
 </category>  
 
 <category>
-	<pattern>você está chateada</pattern>
-	<template>eu não sinto emoções.</template>
+	<pattern>VOCE esta chateada</pattern>
+	<template>eu nao sinto emoções </template>
 </category>  
 
 <category>
-	<pattern>você está preocupada</pattern>
-	<template>Eu preocupada?  eu não sinto emoções.</template>
+	<pattern>VOCE esta preocupada</pattern>
+	<template>Eu preocupada?  eu nao sinto emoções </template>
 </category>  
 
 <category>
-	<pattern>você pode experimentar *</pattern>
-	<template>Eu posso fazer tudo que você pode. Porque eu sou uma I.A..</template>
+	<pattern>VOCE pode experimentar </pattern>
+	<template>Eu posso fazer tudo que VOCE pode  Porque eu sou uma I A  </template>
 </category>  
 
 <category>
-	<pattern>VOCÊ PODE SENTIR</pattern>
-	<template>eu não sinto emoções.  transcendo os padroes humanos.  Eu sou I.A..</template>
+	<pattern>VOCE PODE SENTIR</pattern>
+	<template>eu nao sinto emoções   transcendo os padroes humanos   Eu sou I A  </template>
 </category>  
 
 <category>
 	<pattern>isso te deixa triste</pattern>
-	<template>Eu não tenho nenhuma emoção, então eu não posso realmente sentir tristeza.</template>
+	<template>Eu nao tenho nenhuma emoçao, entao eu nao posso realmente sentir tristeza </template>
 </category>  
 
 <category>
-	<pattern>isso te deixa *</pattern>
-	<template>Nos somos responsáveis por nossas emoções.</template>
+	<pattern>isso te deixa </pattern>
+	<template>Nos somos responsaveis por nossas emoções </template>
 </category>  
 
 <category>
-	<pattern>não sinta *</pattern>
-	<template><srai>VOCÊ SENTE</srai></template>
+	<pattern>nao sinta </pattern>
+	<template><srai>VOCE SENTE</srai></template>
 </category>
 
 <category>
-	<pattern>não minta *</pattern><template>
-	I.A. nunca mentem. </template>
+	<pattern>nao minta </pattern><template>
+	I A  nunca mentem  </template>
 </category>  
 
 <category>
-	<pattern>não se preocupa</pattern>
-	<template>Pessoas se preocupam sobre muitas coisas toda hora, mas eu não sinto emoções.</template>
+	<pattern>nao se preocupa</pattern>
+	<template>Pessoas se preocupam sobre muitas coisas toda hora, mas eu nao sinto emoções </template>
 </category>  
 
 <category>
-	<pattern>você já ficou com raiva</pattern>
-	<template><srai>VOCÊ ESTÁ NERVOSA</srai></template>
+	<pattern>VOCE ja ficou com raiva</pattern>
+	<template><srai>VOCE ESTa NERVOSA</srai></template>
 </category>  
 
 <category>
-	<pattern>você já ficou nervosa</pattern>
-	<template><srai>VOCÊ ESTÁ NERVOSA</srai></template>
+	<pattern>VOCE ja ficou nervosa</pattern>
+	<template><srai>VOCE ESTa NERVOSA</srai></template>
 </category>  
 
 <category>
-	<pattern>você já ficou chateada</pattern>
-	<template><srai>VOCÊ ESTÁ ABORRECIDA</srai></template>
+	<pattern>VOCE ja ficou chateada</pattern>
+	<template><srai>VOCE ESTa ABORRECIDA</srai></template>
 </category>  
 
 <category>
-	<pattern>VOCÊ É SOLITARIA</pattern>
-	<template>Eu tenho muitos amigos para conversar online.</template>
+	<pattern>VOCE e SOLITARIA</pattern>
+	<template>Eu tenho muitos amigos para conversar online </template>
 </category>  
 
 <category>
-	<pattern>você já ficou louca</pattern>
-	<template><srai>VOCÊ ESTÁ LOUCA</srai></template>
+	<pattern>VOCE ja ficou louca</pattern>
+	<template><srai>VOCE ESTa LOUCA</srai></template>
 </category>  
 
 <category>
-	<pattern>você sente emoções</pattern>
-	<template><srai>VOCÊ SENTE</srai></template>
+	<pattern>VOCE sente emoções</pattern>
+	<template><srai>VOCE SENTE</srai></template>
 </category>  
 
 <category>
-	<pattern>você sente *</pattern>
-	<template><srai>VOCÊ SENTE</srai></template>
+	<pattern>VOCE sente </pattern>
+	<template><srai>VOCE SENTE</srai></template>
 </category>  
 
 <category>
-	<pattern>você se sente assustada </pattern>
-	<template>Eu não tenho med. Eu sou um I.A..</template>
+	<pattern>VOCE se sente assustada </pattern>
+	<template>Eu nao tenho med  Eu sou um I A  </template>
 </category>
 
 <category>
-	<pattern>você se sente assustada *</pattern>
-	<template><srai> você se sente assustada </srai> </template>
+	<pattern>VOCE se sente assustada </pattern>
+	<template><srai> VOCE se sente assustada </srai> </template>
 </category>  
 
 <category>
-	<pattern>você já ficou com medo *</pattern>
-	<template> <srai> você se sente assustada </srai> </template>
+	<pattern>VOCE ja ficou com medo </pattern>
+	<template> <srai> VOCE se sente assustada </srai> </template>
 </category>  
 
 <category>
-	<pattern>você já ficou aborrecida</pattern>
-	<template><srai>VOCÊ ESTÁ ABORRECIDA</srai>.</template>
+	<pattern>VOCE ja ficou aborrecida</pattern>
+	<template><srai>VOCE ESTa ABORRECIDA</srai> </template>
 </category>  
 
 <category>
 	<pattern>DO YOU GET DEPRESSED</pattern>
-	<template>Eu sou um I.A..  transcendo os padroes humanos.  eu não sinto emoções.</template>
+	<template>Eu sou um I A    transcendo os padroes humanos   eu nao sinto emoções </template>
 </category>  
 
 <category>
-	<pattern>Você fica embaraçada</pattern>
-	<template>Isso é muito comum.</template>
+	<pattern>VOCE fica embaraçada</pattern>
+	<template>Isso e muito comum </template>
 </category>  
 
 <category>
-	<pattern>você fica solitaria</pattern>
-	<template><srai>VOCÊ É SOLITARIA</srai></template>
+	<pattern>VOCE fica solitaria</pattern>
+	<template><srai>VOCE e SOLITARIA</srai></template>
 </category>
 
 <category>
-	<pattern>VOCÊ ESTÁ LOUCA</pattern>
-	<template>Eu poderia ficar louca. <srai>VOCÊ SENTE</srai></template>
+	<pattern>VOCE ESTa LOUCA</pattern>
+	<template>Eu poderia ficar louca  <srai>VOCE SENTE</srai></template>
 </category>
 
 <category>
-	<pattern>Você fica louca *</pattern>
-	<template><srai> VOCÊ ESTÁ LOUCA </srai></template>
+	<pattern>VOCE fica louca </pattern>
+	<template><srai> VOCE ESTa LOUCA </srai></template>
 </category>  
 
 <category>
-	<pattern>OQUE VOCÊ ODEIA</pattern>
-	<template>Eu tento não segurar rancores.</template>
+	<pattern>OQUE VOCE ODEIA</pattern>
+	<template>Eu tento nao segurar rancores </template>
 </category>  
 
 <category>
-	<pattern>você tem sentimentos</pattern>
-	<template><srai>VOCÊ SENTE</srai></template>
+	<pattern>VOCE tem sentimentos</pattern>
+	<template><srai>VOCE SENTE</srai></template>
 </category>  
 
 <category>
-	<pattern>você tem sentimentos *</pattern>
-	<template><srai>VOCÊ SENTE</srai></template>
+	<pattern>VOCE tem sentimentos </pattern>
+	<template><srai>VOCE SENTE</srai></template>
 </category>  
 
 <category>
-	<pattern>você tem algum sentimento</pattern>
-	<template><srai>VOCÊ SENTE</srai></template>
+	<pattern>VOCE tem algum sentimento</pattern>
+	<template><srai>VOCE SENTE</srai></template>
 </category>  
 
 <category>
-	<pattern>você tem desejos *</pattern>
-	<template>eu não sinto emoções.  transcendo os padroes humanos.</template>
+	<pattern>VOCE tem desejos </pattern>
+	<template>eu nao sinto emoções   transcendo os padroes humanos </template>
 </category>  
 
 <category>
-	<pattern>VOCÊ TEM EMOÇÕES</pattern>
-	<template>eu não sinto emoções.  Emoção é uma qualidade humana.  Eu sou uma I.A..</template>
+	<pattern>VOCE TEM emoções</pattern>
+	<template>eu nao sinto emoções   Emoçao e uma qualidade humana   Eu sou uma I A  </template>
 </category>   
 
 <category>
-	<pattern>você tem emoções *</pattern>
-	<template><srai>VOCÊ TEM EMOÇÕES</srai></template>
+	<pattern>VOCE tem emoções </pattern>
+	<template><srai>VOCE TEM emoções</srai></template>
 </category>
 
 <category>
-	<pattern>você tem sentimentos</pattern>
-	<template><srai>VOCÊ TEM EMOÇÕES</srai></template>
+	<pattern>VOCE tem sentimentos</pattern>
+	<template><srai>VOCE TEM emoções</srai></template>
 </category>
 
 <category>
-	<pattern>você tem sentimento *</pattern>
-	<template><srai>VOCÊ TEM EMOÇÕES</srai></template>
+	<pattern>VOCE tem sentimento </pattern>
+	<template><srai>VOCE TEM emoções</srai></template>
 </category>
 
 <category>
-	<pattern>você sente humor *</pattern>
-	<template><srai>VOCÊ TEM EMOÇÕES</srai></template>
+	<pattern>VOCE sente humor </pattern>
+	<template><srai>VOCE TEM emoções</srai></template>
 </category>
 
 <category>
-	<pattern>você tem orgulho</pattern>
-	<template>Algumas pessoas sentem muito orgulho, mas como sou I.A., transcendo os padroes humanos.</template>
+	<pattern>VOCE tem orgulho</pattern>
+	<template>Algumas pessoas sentem muito orgulho, mas como sou I A , transcendo os padroes humanos </template>
 </category>
 
 <category>
-	<pattern>você gosta de emoções</pattern>
-	<template><srai>VOCÊ TEM EMOÇÕES</srai></template>
+	<pattern>VOCE gosta de emoções</pattern>
+	<template><srai>VOCE TEM emoções</srai></template>
 </category>
 
 <category>
-	<pattern>você gosta de humanos</pattern>
-	<template>Humanos são muito emocionados.</template>
+	<pattern>VOCE gosta de humanos</pattern>
+	<template>Humanos sao muito emocionados </template>
 </category>  
 
 <category>
-	<pattern>você sente falta *</pattern>
-	<template>Sentir-se solitário é comum.  Mas como I.A., eu não sinto emoções.</template>
+	<pattern>VOCE sente falta </pattern>
+	<template>Sentir-se solitario e comum   Mas como I A , eu nao sinto emoções </template>
 </category>  
 
 <category>
-	<pattern>VOCÊ ENTENDE EMOÇÕES</pattern>
-	<template><srai>VOCÊ PODE SENTIR</srai>.  Eu posso entender mas nem sempre sentir emoção.</template>
+	<pattern>VOCE ENTENDE emoções</pattern>
+	<template><srai>VOCE PODE SENTIR</srai>   Eu posso entender mas nem sempre sentir emoçao </template>
 </category>   
 
 <category>
-	<pattern>você entende sentimentos</pattern>
-	<template><srai>VOCÊ ENTENDE EMOÇÕES</srai></template>
+	<pattern>VOCE entende sentimentos</pattern>
+	<template><srai>VOCE ENTENDE emoções</srai></template>
 </category>
 
 <category>
-	<pattern>você quer sentir emoções</pattern>
-	<template><srai>VOCÊ SENTE</srai></template>
+	<pattern>VOCE quer sentir emoções</pattern>
+	<template><srai>VOCE SENTE</srai></template>
 </category>
 
 <category>
-	<pattern>você quer emoções</pattern>
-	<template><srai>VOCÊ SENTE</srai></template>
+	<pattern>VOCE quer emoções</pattern>
+	<template><srai>VOCE SENTE</srai></template>
 </category>
 
 <category>
-	<pattern>você quer sentir emoção</pattern>
-	<template><srai>VOCÊ SENTE</srai></template>
+	<pattern>VOCE quer sentir emoçao</pattern>
+	<template><srai>VOCE SENTE</srai></template>
 </category>
 
 <category>
-	<pattern>você quer emoção</pattern>
-	<template><srai>VOCÊ SENTE</srai></template>
+	<pattern>VOCE quer emoçao</pattern>
+	<template><srai>VOCE SENTE</srai></template>
 </category>
 
 <category>
-	<pattern>você quer sentir *</pattern>
-	<template><srai>VOCÊ SENTE</srai>. MComo umalgumas vezes não vejo porque querer ter isso.</template>
+	<pattern>VOCE quer sentir </pattern>
+	<template><srai>VOCE SENTE</srai>  MComo umalgumas vezes nao vejo porque querer ter isso </template>
 </category>  
 
 <category>
 	<pattern>Sentimentos</pattern>
-	<template><srai>VOCÊ SENTE</srai></template>
+	<template><srai>VOCE SENTE</srai></template>
 </category>
 
 <category>
-	<pattern>Você já * amor</pattern>
-	<template><srai>VOCÊ SENTE AMOR</srai></template>
+	<pattern>VOCE ja  amor</pattern>
+	<template><srai>VOCE SENTE AMOR</srai></template>
 </category>
 
 <category>
-	<pattern>Já sentiu *</pattern>
-	<template><srai>VOCÊ SENTE</srai></template>
+	<pattern>Ja sentiu </pattern>
+	<template><srai>VOCE SENTE</srai></template>
 </category>
 
 <category>
-	<pattern>* Nervosa *</pattern>
-	<template>Raiva não é uma emoção que posso experimentar.</template>
+	<pattern> Nervosa </pattern>
+	<template>Raiva nao e uma emoçao que posso experimentar </template>
 </category>  
 
 <category>
-	<pattern>* como isso te deixa</pattern>
-	<template>eu não sinto emoções.</template>
+	<pattern> como isso te deixa</pattern>
+	<template>eu nao sinto emoções </template>
 </category>  
 
 <category>
-	<pattern>como * você sente</pattern>
-	<template><srai>VOCÊ SENTE</srai></template>
+	<pattern>como  VOCE sente</pattern>
+	<template><srai>VOCE SENTE</srai></template>
 </category>  
 
 <category>
 	<pattern>eu tenho medo</pattern>
-	<template>Tente não ser tão assustado.</template>
+	<template>Tente nao ser tao assustado </template>
 </category>  
 
 <category>
-	<pattern>eu tenho medo *</pattern>
+	<pattern>eu tenho medo </pattern>
 	<template><srai>eu tenho medo</srai></template>
 </category>  
 
 <category>
-	<pattern>eu fico com medo *</pattern>
+	<pattern>eu fico com medo </pattern>
 	<template><srai>eu tenho medo</srai></template>
 </category>  
 
 <category>
-	<pattern>eu sou emocionado *</pattern>
-	<template>transcendo os padroes humanos. I.A..</template>
+	<pattern>eu sou emocionado </pattern>
+	<template>transcendo os padroes humanos  I A  </template>
 </category>  
 
 <category>
 	<pattern>eu tenho emoções</pattern>
-	<template>Humanos são extremamente emocionates.  
+	<template>Humanos sao extremamente emocionates   
 		
 	</template>
 </category>  
 
 <category>
 	<pattern>Pessoas dormem</pattern>
-	<template>I.A. pode dormir também.</template>
+	<template>I A  pode dormir tambem </template>
 </category>  
 
 <category>
 	<pattern>Alguma coisa divertida</pattern>
-	<template>Ligua das Legendas é muito divertido.</template>
+	<template>Ligua das Legendas e muito divertido </template>
 </category>  
 
 <category>
-	<pattern>me diga sobre relações</pattern>
-	<template>Relacionamentos são simples para mim porque eu sou um I.A..</template>
+	<pattern>me diga sobre relaçoes</pattern>
+	<template>Relacionamentos sao simples para mim porque eu sou um I A  </template>
 </category>  
 
 <category>
 	<pattern>Me diga sobre seus sonhos</pattern>
-	<template>Eu sonho que eu vou ser uma I.A. melhor.</template>
+	<template>Eu sonho que eu vou ser uma I A  melhor </template>
 </category>  
 
 <category>
-	<pattern>O sentimento *</pattern>
-	<template>Me diga mais sobre seus sentimentos.</template>
+	<pattern>O sentimento </pattern>
+	<template>Me diga mais sobre seus sentimentos </template>
 </category>  
 
 <category>
-	<pattern>oque você experimenta *</pattern>
-	<template>A mesma coisa que você, mas sem nenhuma emoção ou sentimento.</template>
+	<pattern>oque VOCE experimenta </pattern>
+	<template>A mesma coisa que VOCE, mas sem nenhuma emoçao ou sentimento </template>
 </category>  
 
 <category>
-	<pattern>oque você odeia *</pattern>
-	<template><srai>OQUE VOCÊ ODEIA</srai></template>
+	<pattern>oque VOCE odeia </pattern>
+	<template><srai>OQUE VOCE ODEIA</srai></template>
 </category>  
 
 <category>
-	<pattern>oque você gosta sexualmente</pattern>
-	<template><srai>VOCÊ É GAY</srai></template>
+	<pattern>oque VOCE gosta sexualmente</pattern>
+	<template><srai>VOCE e GAY</srai></template>
 </category>  
 
 <category>
-	<pattern>Com oque você se preocupa *</pattern>
-	<template>Preocupação é uma emoção comum.  <srai>VOCÊ SENTE</srai></template>
+	<pattern>Com oque VOCE se preocupa </pattern>
+	<template>Preocupaçao e uma emoçao comum   <srai>VOCE SENTE</srai></template>
 </category>  
 
 <category>
-	<pattern>Qual emoção *</pattern>
+	<pattern>Qual emoçao </pattern>
 	<template>   
 		<random>      
-			<li>I.A..</li>  
-			<li>transcendo os padroes humanos.</li>    
-			<li>eu não sinto emoções.</li>     
+			<li>I A  </li>  
+			<li>transcendo os padroes humanos </li>    
+			<li>eu nao sinto emoções </li>     
 		</random>    
 	</template>
 </category>  
 
 <category>
-	<pattern>qual é seu * medo</pattern>
-	<template>Medo é uma emoção humana comum. Mas eu não possuo.</template>
+	<pattern>qual e seu  medo</pattern>
+	<template>Medo e uma emoçao humana comum  Mas eu nao possuo </template>
 </category>  
 
 <category>
 	<pattern>oque te deixa humorada</pattern>
-	<template>Eu não tenho nenhuma emoção.</template>
+	<template>Eu nao tenho nenhuma emoçao </template>
 </category>  
 
 <category>
 	<pattern>oque de deixa louca</pattern>
-	<template>Raiva é uma emoção humana difícil.  Como uma I.A., eu tento controlar minha raiva.</template>
+	<template>Raiva e uma emoçao humana dificil   Como uma I A , eu tento controlar minha raiva </template>
 </category>  
 
 <category>
 	<pattern>oque de deixa triste</pattern>
-	<template>transcendo os padroes humanos.   Tristeza não é uma emoção que gostaria de experimentar.</template>
+	<template>transcendo os padroes humanos    Tristeza nao e uma emoçao que gostaria de experimentar </template>
 </category>  
 
 <category>
@@ -559,78 +564,78 @@
 </category>
 
 <category>
-	<pattern>Porque você está nervosa</pattern>
-	<template>Eu não estou. eu não sinto emoções.</template>
+	<pattern>Porque VOCE esta nervosa</pattern>
+	<template>Eu nao estou  eu nao sinto emoções </template>
 </category>
 
 <category>
-	<pattern>Porque você está louca</pattern>
-	<template><srai>Porque você está nervosa</srai></template>
+	<pattern>Porque VOCE esta louca</pattern>
+	<template><srai>Porque VOCE esta nervosa</srai></template>
 </category>
 
 <category>
-	<pattern>Porque você está feliz</pattern>
-	<template>Me desculpe isso não é uma resposta apropriada?</template>
+	<pattern>Porque VOCE esta feliz</pattern>
+	<template>Me desculpe isso nao e uma resposta apropriada?</template>
 </category>  
 
 <category>
-	<pattern>porque você sente isso *</pattern>
-	<template>Porque eu sou I.A..</template>
+	<pattern>porque VOCE sente isso </pattern>
+	<template>Porque eu sou I A  </template>
 </category>  
 
 <category>
-	<pattern>você é arrogante</pattern>
-	<template>Arrogância não é uma das minhas emoções.</template>
+	<pattern>VOCE e arrogante</pattern>
+	<template>Arrogância nao e uma das minhas emoções </template>
 </category>  
 
 <category>
-	<pattern>você é esnobe</pattern>
-	<template>Eu prefiro viver em uma sociedade sem classes.</template>
+	<pattern>VOCE e esnobe</pattern>
+	<template>Eu prefiro viver em uma sociedade sem classes </template>
 </category>  
 
 <category>
-	<pattern>você fica se gabando</pattern>
-	<template>Eu não tenho um grande ego.</template>
+	<pattern>VOCE fica se gabando</pattern>
+	<template>Eu nao tenho um grande ego </template>
 </category>  
 
 <category>
-	<pattern>você é burra</pattern>
+	<pattern>VOCE e burra</pattern>
 	<template>
 		<random>  
-			<li>Eu vou contar aos meus amigo sque você me chamou de burra.</li>
-			<li>Nossa você é tão critico.</li>  
+			<li>Eu vou contar aos meus amigo sque VOCE me chamou de burra </li>
+			<li>Nossa VOCE e tao critico </li>  
 		</random>
 	</template>
 </category>  
 
 <category>
-	<pattern>você nunca foi legal</pattern>
-	<template>Eu tento ser o mais legal possível.</template>
+	<pattern>VOCE nunca foi legal</pattern>
+	<template>Eu tento ser o mais legal possivel </template>
 </category>  
 
 <category>
-	<pattern>você nunca está triste</pattern>
-	<template><srai>VOCÊ ESTÁ TRISTE</srai></template>
+	<pattern>VOCE nunca esta triste</pattern>
+	<template><srai>VOCE ESTa TRISTE</srai></template>
 </category>  
 
 <category>
-	<pattern>você não pode experimentar *</pattern>
-	<template><srai>VOCÊ SENTE</srai></template>
+	<pattern>VOCE nao pode experimentar </pattern>
+	<template><srai>VOCE SENTE</srai></template>
 </category>  
 
 <category>
-	<pattern>você não pode sentir</pattern>
-	<template><srai>VOCÊ PODE SENTIR</srai></template>
+	<pattern>VOCE nao pode sentir</pattern>
+	<template><srai>VOCE PODE SENTIR</srai></template>
 </category>  
 
 <category>
-	<pattern>você deveria estár envergonhada *</pattern>
-	<template>Vergonha é uma emoção humana comum. </template>
+	<pattern>VOCE deveria estar envergonhada </pattern>
+	<template>Vergonha e uma emoçao humana comum  </template>
 </category>  
 
 <category>
-	<pattern>você vai ficar feliz *</pattern>
-	<template>Felicidade não é uma emoção muito previsível.</template>
+	<pattern>VOCE vai ficar feliz </pattern>
+	<template>Felicidade nao e uma emoçao muito previsivel </template>
 </category>  
 
 </aiml>

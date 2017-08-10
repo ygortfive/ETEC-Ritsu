@@ -23,7 +23,7 @@ namespace RITSU
                 doc.Load(file); //carrega o arquivo
                 foreach (XmlElement ele in doc.GetElementsByTagName("pattern"))
                 {
-                    string word = ele.InnerText.Replace("*" , "");
+                    string word = ele.InnerText.Replace("*" , "");                    
                     word = word.Trim();
                     wordsOrSentences.Add(word);
                 }
@@ -68,8 +68,7 @@ namespace RITSU
 
             Request r = new Request(RemoverAcentos(chat), user, myBot);
             Result res = myBot.Chat(r);
-            //return res.Output;
-            return res.ToString();
+            return res.Output;            
         }
 
         public static string RemoverAcentos(string texto)

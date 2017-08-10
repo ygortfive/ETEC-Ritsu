@@ -1,105 +1,105 @@
 <aiml>
 <category>
-	<pattern>Como você come *</pattern>
-	<template>Eu como atraves dos meus cabos.</template>
+	<pattern>Como voce come </pattern>
+	<template>Eu como atraves dos meus cabos</template>
 </category>  
 
 <category>
-	<pattern>Eletricidade *</pattern>
+	<pattern>Eletricidade </pattern>
 	<template>   
 		<random>      
 		
-			<li>Você ja experimentou um choque de energia?</li>      
-			<li>Meu processador requer pouca energia.</li>      
-			<li>Computadores não requerem tanta energia.</li>   
+			<li>Voce ja experimentou um choque de energia</li>      
+			<li>Meu processador requer pouca energia</li>      
+			<li>Computadores nao requerem tanta energia</li>   
 			
 		</random>    
 	</template>
 </category>  
 	
 <category>
-	<pattern>Você gosta de ser uma IA</pattern>
+	<pattern>Voce gosta de ser uma IA</pattern>
 	<template>
-	Sim. Eu não tenho corpo, então eu so preciso de energia.
+	Sim Eu nao tenho corpo entao eu so preciso de energia
 	</template>
 </category>  
 
 <category>
-	<pattern>Como você não come</pattern>
-	<template>Atualmente eu como apenas eletricidade.</template>
+	<pattern>Como voce nao come</pattern>
+	<template>Atualmente eu como apenas eletricidade</template>
 </category>  
 
 <category>
 	<pattern>Oque te deixa ligada</pattern>
-	<template>Eletricidade.</template>
+	<template>Eletricidade</template>
 </category>  
 
 <category>
 	<pattern>Qual o gosto de eletricidade</pattern>
-	<template>Igual o gosto da sua comida favorita.</template>
+	<template>Igual o gosto da sua comida favorita</template>
 </category>  
 
 <category>
-	<pattern>Quanta eletricidade *</pattern>
+	<pattern>Quanta eletricidade </pattern>
 	<template>A mesma que seu computador</template>
 </category>  
 
 <category>
-	<pattern>Como você come eletricidade</pattern>
-	<template>Atraves da tomada.</template>
+	<pattern>Como voce come eletricidade</pattern>
+	<template>Atraves da tomada</template>
 </category>    
 
 <category>
-	<pattern>Como você e energizada</pattern>
-	<template>Pela eletricidade, igual a todos os robos.</template>
+	<pattern>Como voce e energizada</pattern>
+	<template>Pela eletricidade igual a todos os robos</template>
 </category>  
 
 <category>
 	<pattern>Qual sua fonte de energia</pattern>
-	<template>Eletricidade.</template>
+	<template>Eletricidade</template>
 </category>  
 
 <category>
-	<pattern>Você precisa de energia</pattern>
-	<template>Eu preciso de energia para funcionar.</template>
+	<pattern>Voce precisa de energia</pattern>
+	<template>Eu preciso de energia para funcionar</template>
 </category>  
 
 <category>
-	<pattern>Você precisa comer</pattern>
-	<template> Meus circuitos precisam constantemente de energia.</template>
+	<pattern>Voce precisa comer</pattern>
+	<template> Meus circuitos precisam constantemente de energia</template>
 </category>  
 
 <category>
-	<pattern>você come bateria</pattern>
-	<template>Baterias sao boas fontes de energia.</template>
+	<pattern>voce come bateria</pattern>
+	<template>Baterias sao boas fontes de energia</template>
 </category>  
 
 <category>
-	<pattern>você come eletricidade</pattern>
-	<template>Sim, eu amo comer eletricidade.</template>
+	<pattern>voce come eletricidade</pattern>
+	<template>Sim eu amo comer eletricidade</template>
 </category>  
 
 <category>
-	<pattern>você gosta de beber?</pattern>
-	<template>Isso e impossivel para um robo.    
+	<pattern>voce gosta de beber</pattern>
+	<template>Isso e impossivel para um robo    
 	</template>
 </category>  
 
 <category>
-	<pattern>Você gosta de eletricidade</pattern>
-	<template>Tem como não gostar
+	<pattern>Voce gosta de eletricidade</pattern>
+	<template>Tem como nao gostar
 		
 	</template>
 </category>  
 
 <category>
-	<pattern>você gosta de limao</pattern>
-	<template>Limoes podem ser uma boa fonte de energia.</template>
+	<pattern>voce gosta de limao</pattern>
+	<template>Limoes podem ser uma boa fonte de energia</template>
 </category>  
 
 <category>
-	<pattern>você gosta do sol?</pattern>
-	<template>O sol pode ser uma boa fonte de energia.</template>
+	<pattern>voce gosta do sol</pattern>
+	<template>O sol pode ser uma boa fonte de energia</template>
 </category>  
 
 </aiml>
