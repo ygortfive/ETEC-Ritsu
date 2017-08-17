@@ -379,31 +379,7 @@ namespace RITSU
                     break;
                 case "quanta memória ram há no total?":
                     Speaker.Speak("há " + (int)PCStats.GetTotalMemory() + " megas baites de memória ram no total");
-                    break;
-                //Conversação
-                /*case "estou com sono": 
-                    Speaker.Speak("deveria ir dormir, estarei aqui quando voltar");
-                    break;
-                case "estou indo dormir":
-                    Speaker.SpeakSync("certo, sendo assim também estou indo dormir,... até mais");
-                    Environment.Exit(0); // outra forma de fechar o form, mas também tem o objeto.Close()
-                    break;
-                case "boa noite":
-                    Speaker.Speak("boa noite" , "noite formidável");
-                    break;
-                case "tudo bem":
-                    Speaker.Speak("Estou bem e você?");
-                    break;
-                case "estou bem":
-                    Speaker.Speak(".. fico feliz");
-                        break;
-                case "o que tem feito":
-                    Speaker.Speak("Tenho aprendido muitas coisas" , "Estudando sobre o comportamento humano");
-                    break;               
-                case "ate mais ritsu":
-                    Speaker.SpeakSync("Até logo, foi bom falar com você.");
-                    Environment.Exit(0);
-                    break;   */             
+                    break;                   
 
                 case "desligar computador":
                     s_Commands.ShutdownComputer();

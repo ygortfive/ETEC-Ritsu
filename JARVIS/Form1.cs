@@ -12,6 +12,7 @@ using Microsoft.Speech.Recognition; //Adicionar namespace
 using System.Diagnostics;
 using System.Threading;
 using System.Speech.Synthesis;
+using System.Collections.Generic;
 
 
 // Para sintese e preciso o SpeechSDK5.1, Windows 10 ja tem System.Speech
@@ -87,16 +88,7 @@ namespace RITSU
                 cCommands.Add("em que mês estamos");
                 cCommands.Add("em que ano estamos");
                 cCommands.Add("minimizar a janela principal");
-                cCommands.Add("mostrar janela principal");
-
-                /* status do usuário
-                cCommands.Add("estou com sono");
-                cCommands.Add("estou indo dormir");
-                cCommands.Add("boa noite");
-                cCommands.Add("tudo bem");
-                cCommands.Add("o que tem feito");
-                cCommands.Add("ate mais ritsu");
-                cCommands.Add("estou bem");*/
+                cCommands.Add("mostrar janela principal");               
                 
                 // configurar o sintetizador
                 cCommands.Add("pare de falar");
@@ -136,7 +128,7 @@ namespace RITSU
                 cCommands.Add("word colar");
                 cCommands.Add("word selecionar tudo");
                 cCommands.Add("word negrito");
-                cCommands.Add("word itálico");
+                cCommands.Add("word italico");
                 cCommands.Add("word sublinhado");
                 cCommands.Add("word centralizar");
                 cCommands.Add("word desfazer");
@@ -161,8 +153,9 @@ namespace RITSU
                 cCommands.Add("desligar computador");
                 cCommands.Add("reiniciar computador");
                 cCommands.Add("cancelar desligamento");
-                cCommands.Add("cancelar reinicialização");
-
+                cCommands.Add("cancelar reinicialização");               
+                
+                
                 Choices cNumbers = new Choices();
                 for (int i = 0; i <= 100; i++)
                 {
@@ -179,7 +172,7 @@ namespace RITSU
 
                 // GrammarBuilder
                 GrammarBuilder gb_comandsOfSystem = new GrammarBuilder();
-                gb_comandsOfSystem.Append(c_commandsOfSystem);
+                gb_comandsOfSystem.Append(c_commandsOfSystem);               
 
                 GrammarBuilder gbProcess = new GrammarBuilder();
                 gbProcess.Append(new Choices("abrir", "fechar")); // comando
@@ -230,7 +223,8 @@ namespace RITSU
                  grammars.Add(gInputText);
                  grammars.Add(gArduino);
                  grammars.Add(gAIML);
-                 //grammars.Add(gb_comandsOfSystem); ERROr
+                 grammars.Add(g_comandsOfSystem);               
+                
                  
                 //Carregar gramatica
                 engine.LoadGrammar(g_comandsOfSystem);
@@ -268,7 +262,8 @@ namespace RITSU
         {
             LoadSpeech();
             Speak("Olá, estou pronta para te ajudar! ");            
-            AIML.ConfigAIMLFiles(); 
+            AIML.ConfigAIMLFiles();
+            
         }
 
         // Metodo chamado quando algo é reconhecido

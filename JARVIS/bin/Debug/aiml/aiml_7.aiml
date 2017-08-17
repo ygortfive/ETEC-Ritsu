@@ -6,11 +6,6 @@
 </category>  
 
 <category>
-	<pattern>*</pattern>
-	<template>Não entendi!</template>
-</category>
-
-<category>
 	<pattern>como posso te ofender</pattern>
 	<template>Eu sou I A , entao eu nao me ofendo tao facilmente  </template>
 </category>  
