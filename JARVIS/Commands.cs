@@ -20,7 +20,7 @@ namespace RITSU
             DateTime time = DateTime.Now;
             switch (cmd)
             {
-                case "que horas são": // fala as horas
+                case "que horas sao": // fala as horas
 
                     if (time.Hour <= 12 && time.Hour > 5)
                     {

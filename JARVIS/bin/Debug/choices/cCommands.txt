@@ -1,0 +1,56 @@
+que horas sao
+que dia é hoje
+data de hoje
+em que mês estamos
+em que ano estamos
+minimizar a janela principal
+mostrar janela principal               
+pare de falar
+alterar voz
+media player
+selecionar arquivo
+pausar
+continuar
+parar
+fechar media player
+abrir diretório para reproduzir
+próximo
+anterior
+aumentar volume
+diminuir volume
+mudo
+voltar som
+media player em tela cheia
+media player em tamanho normal
+que arquivo está tocando
+bloco de notas
+salvar texto
+trocar fonte
+fechar bloco de notas
+abrir word
+word novo documento
+word salvar documento
+word fechar
+word recortar
+word copiar
+word colar
+word selecionar tudo
+word negrito
+word italico
+word sublinhado
+word centralizar
+word desfazer
+word refazer
+em quanto estar o uso do processador? //alterar o estar
+quanta memória ram estar sendo usada?
+quanta memória ram ainda há livre?
+quanta memória ram há no total?
+adicionar novo comando
+detalhes dos processos
+lista de processos
+fechar o processo selecionado
+introdução ao assistente ritsu
+desligar computador
+reiniciar computador
+cancelar desligamento
+cancelar reinicialização 

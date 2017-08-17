@@ -49,39 +49,29 @@ namespace RITSU
 
                 Choices cAIML = new Choices(AIML.GetWordsOrSentences()); //frases e palavras aiml
                
-                Choices c_commandsOfSystem = new Choices();
-                //c_commandsOfSystem.Add(GrammarRules.WhatTimeIs.ToArray()); //whatTimeIs
-                //c_commandsOfSystem.Add(GrammarRules.WhatDateIs.ToArray()); //whatDateIs
+                Choices c_commandsOfSystem = new Choices();                
                 c_commandsOfSystem.Add(GrammarRules.JarvisStartListening.ToArray()); //Voltar a falar
                 c_commandsOfSystem.Add(GrammarRules.JarvisStopListening.ToArray()); //Parar de falar
                 c_commandsOfSystem.Add(GrammarRules.MinimizeWindow.ToArray()); //Minimizar janela
                 c_commandsOfSystem.Add(GrammarRules.MaximizeWindow.ToArray()); //Maximizar janela
                 c_commandsOfSystem.Add(GrammarRules.NormalWindow.ToArray()); //Normal janela
                 c_commandsOfSystem.Add(GrammarRules.CloseWindow.ToArray()); //Fechar janela
-                //c_commandsOfSystem.Add(GrammarRules.ChangeVoice.ToArray()); //Alterar voz
-                //c_commandsOfSystem.Add(GrammarRules.Calc.ToArray()); //Calculadora
-                //c_commandsOfSystem.Add(GrammarRules.Calcular.ToArray()); //Realizar calculo 
+                
 
                 //Comandos de processos
-                Choices cProcess = new Choices(); // lista de comandos
-                //cProcess.Add("bloco de notas");               
-                cProcess.Add("prompt de comando");
-                cProcess.Add("gerenciador de tarefas");
-                cProcess.Add("minhas pastas");               
-                cProcess.Add("limpeza de disco");               
-                cProcess.Add("gerenciamento de computador");
-                cProcess.Add("definir programas padrão");
-                cProcess.Add("painel de controle");               
-                cProcess.Add("desfragmentador de disco");
-                cProcess.Add("gerenciador de dispositivos");
-                cProcess.Add("discagem telefônica");
-                cProcess.Add("gerenciamento de disco");
 
-                //Comando para parar de ouvir: "pare de ouvir" / Comando para voltar a ouvir: "Jarvis"
+                string path = "choices\\cProcess.txt";
+                string[] cmds = File.ReadAllLines(path, Encoding.UTF8);
+                Choices cProcess = new Choices(cmds); // lista de comandos
+                //Comandos sendo adicionados atraveis de arquivos na pasta debug       
 
-                Choices cCommands = new Choices(); // palavras ou frases que são comandos
+               string path1 = "choices\\cCommands.txt";
+               string[] cmds1 = File.ReadAllLines(path1, Encoding.UTF8);
+               Choices cCommands = new Choices(cmds1); // palavras ou frases que são comandos
+                //OBS.: NECESSÁRIO RETIRAR TODOS OS ACENTOS
 
-                // informações de hora e data
+                /*
+               // informações de hora e data
                 cCommands.Add("que horas são");
                 cCommands.Add("que dia é hoje");
                 cCommands.Add("data de hoje");
@@ -153,7 +143,8 @@ namespace RITSU
                 cCommands.Add("desligar computador");
                 cCommands.Add("reiniciar computador");
                 cCommands.Add("cancelar desligamento");
-                cCommands.Add("cancelar reinicialização");               
+                cCommands.Add("cancelar reinicialização");    
+                */
                 
                 
                 Choices cNumbers = new Choices();
