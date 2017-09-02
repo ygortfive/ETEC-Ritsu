@@ -3,6 +3,7 @@ O que precisa ser feito:
 Estavamos com problemas por não encontrar conversação em portugues, porém consegui encontrar vários arquivos AIML criado por Brs, mas são de um projeto chamado Cybora de uma instuição ai.
 O que eu preciso é que os arquivos sejam revisados e retirados tudo que estiver com acentuação, <set = nome> e que fizer mensão a Cybora.
 Quando terminarem renomem o arquivo para Ritsu_x (x = número do arquivo).
+Os arquivos estão na pasta 05_Arquivos para verificação.
 
 Preciso que a Sandra me envie o que tiver pronto da documentação.
 Que o Maycon envie o que tiver do código do arduino.
