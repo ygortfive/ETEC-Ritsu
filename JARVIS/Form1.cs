@@ -68,83 +68,8 @@ namespace RITSU
                string path1 = "choices\\cCommands.txt";
                string[] cmds1 = File.ReadAllLines(path1, Encoding.UTF8);
                Choices cCommands = new Choices(cmds1); // palavras ou frases que são comandos
-                //OBS.: NECESSÁRIO RETIRAR TODOS OS ACENTOS
-
-                /*
-               // informações de hora e data
-                cCommands.Add("que horas são");
-                cCommands.Add("que dia é hoje");
-                cCommands.Add("data de hoje");
-                cCommands.Add("em que mês estamos");
-                cCommands.Add("em que ano estamos");
-                cCommands.Add("minimizar a janela principal");
-                cCommands.Add("mostrar janela principal");               
-                
-                // configurar o sintetizador
-                cCommands.Add("pare de falar");
-                cCommands.Add("alterar voz");
-
-                // media player
-                cCommands.Add("media player");
-                cCommands.Add("selecionar arquivo");
-                cCommands.Add("pausar");
-                cCommands.Add("continuar");
-                cCommands.Add("parar");
-                cCommands.Add("fechar media player");
-                cCommands.Add("abrir diretório para reproduzir");
-                cCommands.Add("próximo");
-                cCommands.Add("anterior");
-                cCommands.Add("aumentar volume");
-                cCommands.Add("diminuir volume");
-                cCommands.Add("mudo");
-                cCommands.Add("voltar som");
-                cCommands.Add("media player em tela cheia");
-                cCommands.Add("media player em tamanho normal");
-                cCommands.Add("que arquivo está tocando");
-
-                //Notepad
-                cCommands.Add("bloco de notas");
-                cCommands.Add("salvar texto");
-                cCommands.Add("trocar fonte");
-                cCommands.Add("fechar bloco de notas");
-
-                //Word
-                cCommands.Add("abrir word");
-                cCommands.Add("word novo documento");
-                cCommands.Add("word salvar documento");
-                cCommands.Add("word fechar");
-                cCommands.Add("word recortar");
-                cCommands.Add("word copiar");
-                cCommands.Add("word colar");
-                cCommands.Add("word selecionar tudo");
-                cCommands.Add("word negrito");
-                cCommands.Add("word italico");
-                cCommands.Add("word sublinhado");
-                cCommands.Add("word centralizar");
-                cCommands.Add("word desfazer");
-                cCommands.Add("word refazer");
-
-                // informações do sistema
-                cCommands.Add("em quanto estar o uso do processador?"); //alterar o estar
-                cCommands.Add("quanta memória ram estar sendo usada?");
-                cCommands.Add("quanta memória ram ainda há livre?");
-                cCommands.Add("quanta memória ram há no total?");
-
-                // Comandos, adicionar
-                cCommands.Add("adicionar novo comando");
-                // processos
-                cCommands.Add("detalhes dos processos");
-                // processList
-                cCommands.Add("lista de processos");
-                cCommands.Add("fechar o processo selecionado");
-                // ritsu
-                cCommands.Add("introdução ao assistente ritsu");
-
-                cCommands.Add("desligar computador");
-                cCommands.Add("reiniciar computador");
-                cCommands.Add("cancelar desligamento");
-                cCommands.Add("cancelar reinicialização");    
-                */
+                //OBS.: NECESSÁRIO RETIRAR TODOS OS ACENTOS              
+               
                 
                 
                 Choices cNumbers = new Choices();

@@ -1,0 +1,16 @@
+O que precisa ser feito:
+
+Estavamos com problemas por não encontrar conversação em portugues, porém consegui encontrar vários arquivos AIML criado por Brs, mas são de um projeto chamado Cybora de uma instuição ai.
+O que eu preciso é que os arquivos sejam revisados e retirados tudo que estiver com acentuação, <set = nome> e que fizer mensão a Cybora.
+Quando terminarem renomem o arquivo para Ritsu_x (x = número do arquivo).
+
+Preciso que a Sandra me envie o que tiver pronto da documentação.
+Que o Maycon envie o que tiver do código do arduino.
+
+Correção de licença eu irei fazer.
+
+Correção do erro para fechar porta COM nem reclamo se não quiserem fazer mas deixei espaço aberto porque, por enquanto, problema está em um projeto a parte da Ritsu, se alguem for querer fazer me avise que envio o código.
+
+Ideias... bom, eu montei um roteiro já, mas estou aceitando ideias.
+
+Já esta tudo com prazos definidos, espero que cumpram-os. 

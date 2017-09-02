@@ -1,0 +1,8 @@
+O que pensei em fazer quanto a apresentação:
+
+Dar uma introdução sobre o que é uma assistente virtual,
+passar a ideia do que é internet das coisas,
+falar um pouco sobre o arduino, já que ele é o que junta a Assistente com a ideia de IoT,
+para então realizar uma demonstração.
+
+Na demonstração iria deixar aberto a lista de comandos e alguem para ir executando-os. 
