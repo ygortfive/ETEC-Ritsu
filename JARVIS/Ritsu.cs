@@ -19,7 +19,7 @@ using System.Collections.Generic;
 
 namespace RITSU
 {
-    public partial class Form1 : Form
+    public partial class Ritsu : Form
     {
 
         //Forms nulos
@@ -33,7 +33,7 @@ namespace RITSU
 
 
         private bool isRitsuListening = true; //variavel para parar de ouvir
-        public Form1()
+        public Ritsu()
         {
             InitializeComponent();
         }
@@ -78,10 +78,9 @@ namespace RITSU
                     cNumbers.Add(i.ToString());
                 }
 
-                Choices cArduino = new Choices();
-                cArduino.Add("acender led");
-                cArduino.Add("apagar led");
-                cArduino.Add("abrir arduino");
+                string path2 = "choices\\cArduino.txt";
+                string[] cmds2 = File.ReadAllLines(path2, Encoding.UTF8);
+                Choices cArduino = new Choices(cmds2);                
 
                 Choices cInputText = new Choices();
                 cInputText.Add("adicionar texto");

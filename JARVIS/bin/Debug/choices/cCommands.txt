@@ -1,3 +1,4 @@
+lista de comandos
 que horas sao
 que dia é hoje
 data de hoje

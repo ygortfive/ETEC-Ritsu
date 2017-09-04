@@ -439,6 +439,13 @@ namespace RITSU
                 case "word refazer":
                     ActionSoftwares.WordRedo();
                     break;
+
+                //Lista de comandos
+
+                case "lista de comandos":
+                    HelpCommands ajuda = new HelpCommands();
+                    ajuda.ShowDialog();
+                    break;
             }
         }
 

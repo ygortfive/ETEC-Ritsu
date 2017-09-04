@@ -45,7 +45,7 @@ namespace RITSU
         private void button1_Click(object sender, EventArgs e)
         {
             Speaker.SetVoice(comboBox1.SelectedItem.ToString());
-            Form1.SetVoice(comboBox1.SelectedItem.ToString());
+            Ritsu.SetVoice(comboBox1.SelectedItem.ToString());
             Speaker.Speak("A voz foi alterar", "feito", "como quiser");
         }
     }

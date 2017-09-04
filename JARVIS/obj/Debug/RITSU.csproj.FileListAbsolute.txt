@@ -2,7 +2,6 @@ F:\Ygu\TCC\Ritsu\JARVIS\bin\Debug\JARVIS.exe.config
 F:\Ygu\TCC\Ritsu\JARVIS\bin\Debug\JARVIS.exe
 F:\Ygu\TCC\Ritsu\JARVIS\bin\Debug\JARVIS.pdb
 F:\Ygu\TCC\Ritsu\JARVIS\obj\Debug\RITSU.csprojResolveAssemblyReference.cache
-F:\Ygu\TCC\Ritsu\JARVIS\obj\Debug\RITSU.Form1.resources
 F:\Ygu\TCC\Ritsu\JARVIS\obj\Debug\RITSU.Properties.Resources.resources
 F:\Ygu\TCC\Ritsu\JARVIS\obj\Debug\RITSU.SelectVoz.resources
 F:\Ygu\TCC\Ritsu\JARVIS\obj\Debug\RITSU.csproj.GenerateResource.Cache
@@ -24,3 +23,5 @@ F:\Ygu\TCC\BKP_tcc\29-04\JARVIS\obj\Debug\RITSU.csproj.ResolveComReference.cache
 F:\Ygu\TCC\BKP_tcc\29-04\JARVIS\obj\Debug\JARVIS.exe
 F:\Ygu\TCC\BKP_tcc\29-04\JARVIS\obj\Debug\JARVIS.pdb
 F:\Ygu\TCC\Ritsu\JARVIS\bin\Debug\InputSimulator.dll
+F:\Ygu\TCC\Ritsu\JARVIS\obj\Debug\RITSU.HelpCommands.resources
+F:\Ygu\TCC\Ritsu\JARVIS\obj\Debug\RITSU.Ritsu.resources

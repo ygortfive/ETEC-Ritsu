@@ -63,13 +63,19 @@
     <Compile Include="ComandsArduino.cs" />
     <Compile Include="Commands.cs" />
     <Compile Include="CommandsForm.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Ritsu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Ritsu.Designer.cs">
+      <DependentUpon>Ritsu.cs</DependentUpon>
     </Compile>
     <Compile Include="GrammarRules.cs" />
+    <Compile Include="HelpCommands.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpCommands.Designer.cs">
+      <DependentUpon>HelpCommands.cs</DependentUpon>
+    </Compile>
     <Compile Include="In_Out_Arduino.cs" />
     <Compile Include="KeyBoard_Simulator.cs" />
     <Compile Include="MediaPlayer.cs">
@@ -103,8 +109,11 @@
     </Compile>
     <Compile Include="Speaker.cs" />
     <Compile Include="s_Commands.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Ritsu.resx">
+      <DependentUpon>Ritsu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpCommands.resx">
+      <DependentUpon>HelpCommands.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MediaPlayer.resx">
       <DependentUpon>MediaPlayer.cs</DependentUpon>
