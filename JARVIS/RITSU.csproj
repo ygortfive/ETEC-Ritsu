@@ -43,6 +43,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files (x86)\Microsoft SDKs\Speech\v11.0\Assembly\Microsoft.Speech.dll</HintPath>
     </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="S22.Imap">
+      <HintPath>..\..\..\Estudo\Componentes essenciais\DLLs\S22.Imap.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Speech" />
@@ -56,28 +62,56 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActionProcess.cs" />
-    <Compile Include="ActionSoftwares.cs" />
-    <Compile Include="AIML.cs" />
-    <Compile Include="Calculation.cs" />
-    <Compile Include="ComandsArduino.cs" />
-    <Compile Include="Commands.cs" />
-    <Compile Include="CommandsForm.cs" />
+    <Compile Include="ApplicationEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEmail.Designer.cs">
+      <DependentUpon>ApplicationEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\GetSetEmail.cs" />
+    <Compile Include="BLL\GetSetLogin.cs" />
+    <Compile Include="DAL\clsConexao.cs" />
+    <Compile Include="DTO\clsMetodosBanco.cs" />
+    <Compile Include="EmailAtual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmailAtual.Designer.cs">
+      <DependentUpon>EmailAtual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginEmail.Designer.cs">
+      <DependentUpon>LoginEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="One for All\ActionProcess.cs" />
+    <Compile Include="One for All\ActionSoftwares.cs" />
+    <Compile Include="One for All\AIML.cs" />
+    <Compile Include="One for All\Calculation.cs" />
+    <Compile Include="One for All\ComandsArduino.cs" />
+    <Compile Include="One for All\Commands.cs" />
+    <Compile Include="One for All\CommandsEmail.cs" />
+    <Compile Include="One for All\CommandsForm.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Ritsu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ritsu.Designer.cs">
       <DependentUpon>Ritsu.cs</DependentUpon>
     </Compile>
-    <Compile Include="GrammarRules.cs" />
+    <Compile Include="One for All\GrammarRules.cs" />
     <Compile Include="HelpCommands.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="HelpCommands.Designer.cs">
       <DependentUpon>HelpCommands.cs</DependentUpon>
     </Compile>
-    <Compile Include="In_Out_Arduino.cs" />
-    <Compile Include="KeyBoard_Simulator.cs" />
+    <Compile Include="One for All\In_Out_Arduino.cs" />
+    <Compile Include="One for All\KeyBoard_Simulator.cs" />
     <Compile Include="MediaPlayer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,7 +124,7 @@
     <Compile Include="Notepad.Designer.cs">
       <DependentUpon>Notepad.cs</DependentUpon>
     </Compile>
-    <Compile Include="PCStats.cs" />
+    <Compile Include="One for All\PCStats.cs" />
     <Compile Include="ProcessList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,16 +133,25 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RitsuHELP.cs" />
-    <Compile Include="Runner.cs" />
+    <Compile Include="One for All\RitsuHELP.cs" />
+    <Compile Include="One for All\Runner.cs" />
     <Compile Include="SelectVoz.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SelectVoz.Designer.cs">
       <DependentUpon>SelectVoz.cs</DependentUpon>
     </Compile>
-    <Compile Include="Speaker.cs" />
+    <Compile Include="One for All\Speaker.cs" />
     <Compile Include="s_Commands.cs" />
+    <EmbeddedResource Include="ApplicationEmail.resx">
+      <DependentUpon>ApplicationEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmailAtual.resx">
+      <DependentUpon>EmailAtual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginEmail.resx">
+      <DependentUpon>LoginEmail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ritsu.resx">
       <DependentUpon>Ritsu.cs</DependentUpon>
     </EmbeddedResource>
@@ -126,17 +169,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="SelectVoz.resx">
       <DependentUpon>SelectVoz.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -168,6 +207,15 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\C1D5oE8UUAIlXri.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\5.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

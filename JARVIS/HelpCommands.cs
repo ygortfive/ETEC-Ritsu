@@ -13,7 +13,7 @@ namespace RITSU
 {
     public partial class HelpCommands : Form
     {
-        
+        string path;
         
         public HelpCommands()
         {
@@ -23,7 +23,7 @@ namespace RITSU
         private void comandosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             listCommands.Items.Clear();
-            string path = "choices\\cProcess.txt";
+            path = "choices\\cProcess.txt";
             string[] cmds = File.ReadAllLines(path, Encoding.UTF8);
             listCommands.Visible = true;            
             foreach (string x in cmds)
@@ -35,7 +35,7 @@ namespace RITSU
         private void softwareToolStripMenuItem_Click(object sender, EventArgs e)
         {
             listCommands.Items.Clear();
-            string path = "choices\\cCommands.txt";
+            path = "choices\\cCommands.txt";
             string[] cmds = File.ReadAllLines(path, Encoding.UTF8);
             listCommands.Visible = true;
             foreach (string x in cmds)

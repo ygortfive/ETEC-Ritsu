@@ -68,6 +68,14 @@ namespace RITSU
         public static void ctrl_Y()
         {
             InputSimulator.SimulateModifiedKeyStroke(VirtualKeyCode.CONTROL, VirtualKeyCode.VK_Y);
-        }        
+        }
+        public static void ctrl_B()
+        {
+            InputSimulator.SimulateModifiedKeyStroke(VirtualKeyCode.CONTROL, VirtualKeyCode.VK_B);
+        }
+        public static void ctrl_T()
+        {
+            InputSimulator.SimulateModifiedKeyStroke(VirtualKeyCode.CONTROL, VirtualKeyCode.VK_T);
+        } 
     }
 }

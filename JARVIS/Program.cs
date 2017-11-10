@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RITSU.BLL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,11 @@ namespace RITSU
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Ritsu());
+            
+            LoginEmail le = new LoginEmail();            
+            le.ShowDialog();
+            //GetSetLogin gsl = new GetSetLogin();
+                Application.Run(new Ritsu());           
         }
     }
 }

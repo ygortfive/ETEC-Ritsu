@@ -45,10 +45,10 @@ namespace RITSU
                 case "data de hoje":
                     Speaker.Speak(DateTime.Now.ToShortDateString());
                     break;
-                case "que dia é hoje":
+                case "que dia e hoje":
                     Speaker.Speak(DateTime.Today.ToString("dddd"));
                     break;
-                case "em que mês estamos":
+                case "em que mes estamos":
                     // vamos usar switch para pegar o nome do mes
                     string month = "";
                     int n = time.Month;
@@ -175,7 +175,7 @@ namespace RITSU
                          Speaker.Speak("media player já esta fechado");
                      }
                      break;
-                 case "abrir diretório para reproduzir":
+                 case "abrir diretorio para reproduzir":
                      if (mediaPlayer != null)
                      {
                          mediaPlayer.OpenDirectory();
@@ -186,7 +186,7 @@ namespace RITSU
                          Speaker.Speak("media player, não está aberto!"); // diz algo
                      }
                      break;
-                 case "próximo":
+                 case "proximo":
                      if (mediaPlayer != null)
                      {
                          mediaPlayer.NextFile();
@@ -266,7 +266,7 @@ namespace RITSU
                          Speaker.Speak("media player, não está aberto!"); // diz algo
                      }
                      break;
-                 case "que arquivo está tocando":
+                 case "que arquivo esta tocando":
                      if (mediaPlayer != null)
                      {
                          mediaPlayer.SayFileThatIsPlaying();
@@ -345,7 +345,7 @@ namespace RITSU
                     ActionProcess.ProcessesRunning(); // chama o método
                     break;
 
-                case "introdução ao assistente ritsu":
+                case "se apresente ritsu":
                     RITSUHelp.Introduction();
                     break;
 
@@ -371,13 +371,13 @@ namespace RITSU
                 case "em quanto estar o uso do processador?":
                     Speaker.Speak("o uso do processador estar em " + Math.Round(PCStats.GetCPUUsage(), 2).ToString() + " porcento");
                     break;
-                case "quanta memória ram estar sendo usada?":
+                case "quanta memoria ram estar sendo usada?":
                     Speaker.Speak("estão sendo usados " + ((int)PCStats.GetTotalMemory() - PCStats.GetFreeMemory()).ToString() + " megas baites de memória ram");
                     break;
-                case "quanta mamória ram ainda há livre?":
+                case "quanta mamoria ram ainda ha livre?":
                     Speaker.Speak("há " + (int)PCStats.GetFreeMemory() + " megas baites de memória ram livres");
                     break;
-                case "quanta memória ram há no total?":
+                case "quanta memoria ram ha no total?":
                     Speaker.Speak("há " + (int)PCStats.GetTotalMemory() + " megas baites de memória ram no total");
                     break;                   
 
@@ -444,7 +444,12 @@ namespace RITSU
 
                 case "lista de comandos":
                     HelpCommands ajuda = new HelpCommands();
-                    ajuda.ShowDialog();
+                    ajuda.Show();
+                    break;
+            //Email
+                case "ver email":
+                    ApplicationEmail email = new ApplicationEmail();
+                    email.ShowDialog();
                     break;
             }
         }

@@ -25,3 +25,8 @@ F:\Ygu\TCC\BKP_tcc\29-04\JARVIS\obj\Debug\JARVIS.pdb
 F:\Ygu\TCC\Ritsu\JARVIS\bin\Debug\InputSimulator.dll
 F:\Ygu\TCC\Ritsu\JARVIS\obj\Debug\RITSU.HelpCommands.resources
 F:\Ygu\TCC\Ritsu\JARVIS\obj\Debug\RITSU.Ritsu.resources
+F:\Ygu\TCC\Ritsu\JARVIS\obj\Debug\RITSU.LoginEmail.resources
+F:\Ygu\TCC\Ritsu\JARVIS\bin\Debug\MySql.Data.dll
+F:\Ygu\TCC\Ritsu\JARVIS\bin\Debug\S22.Imap.dll
+F:\Ygu\TCC\Ritsu\JARVIS\obj\Debug\RITSU.ApplicationEmail.resources
+F:\Ygu\TCC\Ritsu\JARVIS\obj\Debug\RITSU.EmailAtual.resources

@@ -13,6 +13,14 @@ using System.Diagnostics;
 using System.Threading;
 using System.Speech.Synthesis;
 using System.Collections.Generic;
+using RITSU.One_for_All;
+using RITSU.BLL;
+using System.Net;
+using System.Net.Mail;
+using S22.Imap;
+using RITSU.DTO;
+using System.IO.Ports;
+using System.Media;
 
 
 // Para sintese e preciso o SpeechSDK5.1, Windows 10 ja tem System.Speech
@@ -20,30 +28,35 @@ using System.Collections.Generic;
 namespace RITSU
 {
     public partial class Ritsu : Form
-    {
-
+    {     
+        //String para PORTCOM
+        string DadosCOM;
+        //Random 
+        List<string> Falha = new List<string>() { "Não consigo entender, poderia repetir?" , "NANI?" , "IRINEU" , "PERGUNTA LÁ NO POSTO IPIRANGA"};
+        Random rndAll = new Random();
+        List<string> images = new List<string>() {"1.jpg", "2.jpg","3.jpg","4.jpg","5.jpg","6.png","7.jpg","8.png","9.jpg","10.png"};
+              
         //Forms nulos
         private SelectVoz selectVoice = null;
 
         //Fim dos forms
         private SpeechRecognitionEngine engine; //engine de reconhecimento
         private static SpeechSynthesizer synthesizer = new SpeechSynthesizer(); //Sintetizador de palavras
-
-        
-
-
         private bool isRitsuListening = true; //variavel para parar de ouvir
+
         public Ritsu()
         {
             InitializeComponent();
-        }
+            alterarBack();          
+        }    
 
         private void LoadSpeech() //metodo que carregara tudo
         {
             try
             {
                 engine = new SpeechRecognitionEngine(); // Instancia do reconhecedor
-                engine.SetInputToDefaultAudioDevice(); //microfone                     
+                engine.SetInputToDefaultAudioDevice(); //microfone  
+                //engine.RecognizeAsync();   
 
                 //carregando comandos na gramatica
 
@@ -65,12 +78,16 @@ namespace RITSU
                 Choices cProcess = new Choices(cmds); // lista de comandos
                 //Comandos sendo adicionados atraveis de arquivos na pasta debug       
 
-               string path1 = "choices\\cCommands.txt";
-               string[] cmds1 = File.ReadAllLines(path1, Encoding.UTF8);
-               Choices cCommands = new Choices(cmds1); // palavras ou frases que são comandos
-                //OBS.: NECESSÁRIO RETIRAR TODOS OS ACENTOS              
-               
-                
+               path = "choices\\cCommands.txt";
+               cmds = File.ReadAllLines(path, Encoding.UTF8);
+               Choices cCommands = new Choices(cmds); // palavras ou frases que são comandos
+                //OBS.: NECESSÁRIO RETIRAR TODOS OS ACENTOS
+
+                //Deve-se iniciar com o carregar email
+               path = "choices\\cEmail.txt";
+               cmds = File.ReadAllLines(path, Encoding.UTF8);
+               Choices cEmail = new Choices(cmds);         
+                          
                 
                 Choices cNumbers = new Choices();
                 for (int i = 0; i <= 100; i++)
@@ -108,6 +125,19 @@ namespace RITSU
                 GrammarBuilder gbArduino = new GrammarBuilder();
                 gbArduino.Append(cArduino);
 
+                GrammarBuilder gbEmail = new GrammarBuilder();
+                gbEmail.Append(cEmail);
+
+                /*
+                GrammarBuilder gbDictation = new GrammarBuilder();
+                gbDictation.AppendDictation();
+
+                GrammarBuilder startStop = new GrammarBuilder();
+                startStop.Append(new SemanticResultKey("StartDictation", new SemanticResultValue("Start Dictation", true)));
+                startStop.Append(new SemanticResultKey("DictationInput", gbDictation));
+                startStop.Append(new SemanticResultKey("StopDictation", new SemanticResultValue("Stop Dictation", false)));
+                 */
+
                 //Grammar
                 Grammar g_comandsOfSystem = new Grammar(gb_comandsOfSystem);
                 g_comandsOfSystem.Name = "sys";
@@ -130,6 +160,14 @@ namespace RITSU
                 Grammar gArduino = new Grammar(gbArduino);
                 gArduino.Name = "Arduino";
 
+                Grammar gEmail = new Grammar(gbEmail);
+                gEmail.Name = "Email";
+
+                /*
+                Grammar gDictation = new Grammar(startStop);
+                gDictation.Name = "Dicionario";
+                 */
+
                 // Lista de gramáticas 
                  List<Grammar> grammars = new List<Grammar>();
                  grammars.Add(gProcess);
@@ -138,7 +176,9 @@ namespace RITSU
                  grammars.Add(gInputText);
                  grammars.Add(gArduino);
                  grammars.Add(gAIML);
-                 grammars.Add(g_comandsOfSystem);               
+                 grammars.Add(g_comandsOfSystem);
+                 grammars.Add(gEmail);
+                 //grammars.Add(gDictation);
                 
                  
                 //Carregar gramatica
@@ -149,6 +189,8 @@ namespace RITSU
                 engine.LoadGrammar(gInputText);
                 engine.LoadGrammar(gArduino);
                 engine.LoadGrammar(gAIML);
+                engine.LoadGrammar(gEmail);
+                //engine.LoadGrammar(gDictation);
                                 
                 #region SpeechRecognition Events
                 engine.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(rec); //reconhecimento confirmado
@@ -168,7 +210,7 @@ namespace RITSU
             }
             catch (Exception ex) //se algum error ocorrer, entrara aqui
             {
-                MessageBox.Show("Ocorreu um erro no LoadSpeech()" + ex.Message);
+                MessageBox.Show("Ocorreu um erro no LoadSpeech() \n" + ex.Message);
             }
         }
 
@@ -176,8 +218,10 @@ namespace RITSU
         private void Form1_Load(object sender, EventArgs e)
         {
             LoadSpeech();
-            Speak("Olá, estou pronta para te ajudar! ");            
+            Speak("Olá, estou pronta para te ajudar! ");
+            Speak("Se não souber por onde começar diga: lista de comandos");
             AIML.ConfigAIMLFiles();
+            alterarBack();
             
         }
 
@@ -208,8 +252,8 @@ namespace RITSU
                         
             if (conf > 0.5f)
             {
-                //this.label1.BackColor = Color.DarkGray; //mudar cor do background quando reconhecido
-                this.label1.ForeColor = Color.LawnGreen; //mudar cor da fonte quando reconhecido
+                //this.label1.BackColor = Color.DarkGray; //mudar cor do background quando reconhecido                 
+                recValidate.Image = Image.FromFile("true_false\\green_btn.png"); //mudar imagem quando reconhecido
                 lbl_rec.Text = "User: " + speech;
                 if (GrammarRules.JarvisStopListening.Any(x => x == speech)) //Se for falado qualquer coisa dentro das condições do metodo JavisStopListening ira executar essa if
                 {
@@ -246,25 +290,35 @@ namespace RITSU
                             break;
                         case "Process":
                             ActionProcess.OpenOrClose(speech);
+                            alterarBack();
                             break;
 
                         case "Commands":                            
-                                Commands.Execute(speech);                                  
+                                Commands.Execute(speech);
+                                alterarBack();     
                             break;
 
                         case "calc":
                             if (conf >= 0.6)
                             {
                                 Speak(Calculation.calcSolve(speech));
+                                alterarBack();
                             }
                             break;                        
 
                         case "Arduino":
                             ComandsArduino.Iniciar(speech);
+                            alterarBack();
+                            break;
+
+                        case "Email":
+                            CommandsEmail.ExecuteEmail(speech);
+                            alterarBack();
                             break;
 
                         default:
                             Speaker.Speak(AIML.GetOutputChat(speech)); //pega resposta
+                            alterarBack();
                             break;
                     }
                 }
@@ -288,8 +342,9 @@ namespace RITSU
         {
             if (isRitsuListening == true)
             {
-                this.label1.ForeColor = Color.Red; //mudar cor da fonte quando nao reconhecido
-                Speak("Não consigo entender, poderia repetir?");
+                recValidate.Image = Image.FromFile("true_false\\red_btn.png"); //mudar cor da fonte quando nao reconhecido                 
+                Speak(Falha[rndAll.Next(Falha.Count)]);
+                alterarBack();
             }           
 
         }
@@ -379,7 +434,61 @@ namespace RITSU
             Thread.Sleep(4000); //tempo antes de continuar        
             //this.Close();    
             Application.Exit();
-        }             
+        }
+        /*
+        public void Receive(GetSetLogin gsl)
+        {
+            //GetSetLogin gsl = new GetSetLogin();           
+
+            Task.Run(() =>
+            {
+                using (ImapClient client = new ImapClient("imap.gmail.com", 993, gsl.Email,
+                    gsl.Senha, AuthMethod.Login, true))
+                {
+                    if (client.Supports("IDLE") == false)
+                    {
+                        MessageBox.Show("Servidor não suporta IMAP IDLE");
+                        return;
+                    }
+                    client.NewMessage += new EventHandler<IdleMessageEventArgs>(OnNewMessage);
+                    while (true) ;
+                }
+            });
+        }
+
+        static Ritsu f;
+        static void OnNewMessage(object sender, IdleMessageEventArgs e)
+        {
+            
+
+            clsMetodosBanco banco = new clsMetodosBanco();
+            GetSetEmail gse = new GetSetEmail();
+            DateTime time = DateTime.Now;
+
+            //Speaker.Speak("Nova mensagem recebida!");
+            MessageBox.Show("Nova mensagem recebida!");
+            MailMessage m = e.Client.GetMessage(e.MessageUID, FetchOptions.Normal);
+            f.Invoke((MethodInvoker)delegate
+            {
+                gse.Remetente = Convert.ToString(m.From);
+                gse.Titulo = m.Subject;
+                gse.Conteudo = m.Body;
+                gse.Hora = time.Hour;
+                try
+                {
+                    banco.CadastrarEmail(gse);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+                //f.rtxtReceive.AppendText("De: " + m.From + "\n" + "Titulo: " + m.Subject + "\n" + "Conteúdo:" + m.Body + "\n");
+            });
+        }
+        */
+
+        
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -393,6 +502,60 @@ namespace RITSU
         private void progressBar1_Click(object sender, EventArgs e)
         {
 
+        }        
+
+        private void timerCOM_Tick(object sender, EventArgs e)
+        {
+            if(PortCOM.IsOpen != false)
+                PortCOM.DataReceived += PortCOM_DataReceived;
+        }
+
+        void PortCOM_DataReceived(object sender, SerialDataReceivedEventArgs e)
+        {
+            DadosCOM = PortCOM.ReadExisting();
+            Thread.Sleep(10000);
+            this.Invoke(new EventHandler(trataDadoRecebido));
+        }
+
+        private void trataDadoRecebido(object sender, EventArgs e)
+        {
+            if (DadosCOM == "1")
+            {
+                Speak("Olá, pode entrar!");
+                Thread.Sleep(10000);
+            }
+        }
+
+        private void alterarBack()
+        {
+            string image = images[rndAll.Next(images.Count())];
+            if (image == "1.jpg" || image == "7.jpg")
+            {                
+                lbl_rec.ForeColor = Color.White;               
+                lbl_Ritsu.ForeColor = Color.White;
+                lbl_rec.Font = new Font(lbl_rec.Font, FontStyle.Regular);
+                lbl_Ritsu.Font = new Font(lbl_Ritsu.Font, FontStyle.Regular);
+            }
+            else if (image == "6.png")
+            {
+                lbl_rec.ForeColor = Color.DarkGray;
+                lbl_Ritsu.ForeColor = Color.DarkGray;
+                lbl_rec.Font = new Font(lbl_rec.Font, FontStyle.Regular);
+                lbl_Ritsu.Font = new Font(lbl_Ritsu.Font, FontStyle.Regular);
+            }
+            else
+            {
+                lbl_rec.ForeColor = Color.Black;          
+                lbl_Ritsu.ForeColor = Color.Black;
+                lbl_rec.Font = new Font(lbl_rec.Font, FontStyle.Bold);
+                lbl_Ritsu.Font = new Font(lbl_Ritsu.Font, FontStyle.Bold);
+            }
+            BackgroundImage = Image.FromFile("images\\"+image);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            alterarBack();
         }
 
 

@@ -1,8 +1,8 @@
 lista de comandos
 que horas sao
-que dia é hoje
+que dia e hoje
 data de hoje
-em que mês estamos
+em que mes estamos
 em que ano estamos
 minimizar a janela principal
 mostrar janela principal               
@@ -14,8 +14,8 @@ pausar
 continuar
 parar
 fechar media player
-abrir diretório para reproduzir
-próximo
+abrir diretorio para reproduzir
+proximo
 anterior
 aumentar volume
 diminuir volume
@@ -23,7 +23,7 @@ mudo
 voltar som
 media player em tela cheia
 media player em tamanho normal
-que arquivo está tocando
+que arquivo esta tocando
 bloco de notas
 salvar texto
 trocar fonte
@@ -42,16 +42,16 @@ word sublinhado
 word centralizar
 word desfazer
 word refazer
-em quanto estar o uso do processador? //alterar o estar
-quanta memória ram estar sendo usada?
-quanta memória ram ainda há livre?
-quanta memória ram há no total?
+em quanto estar o uso do processador?
+quanta memoria ram estar sendo usada?
+quanta memoria ram ainda ha livre?
+quanta memoria ram ha no total?
 adicionar novo comando
 detalhes dos processos
 lista de processos
 fechar o processo selecionado
-introdução ao assistente ritsu
+se apresente ritsu
 desligar computador
 reiniciar computador
 cancelar desligamento
-cancelar reinicialização 
+cancelar reinicializasao 

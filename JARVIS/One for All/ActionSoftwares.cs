@@ -67,7 +67,7 @@ namespace RITSU
 
         private static void SelectAll() //selecionar tudo
         {
-            KeyBoard_Simulator.ctrl_A();
+            KeyBoard_Simulator.ctrl_T();
         }
 
         private static void Bolt() //negrito
@@ -81,7 +81,7 @@ namespace RITSU
         }
         private static void Underline() //sublinhado
         {
-            KeyBoard_Simulator.ctrl_U();
+            KeyBoard_Simulator.ctrl_S();
         }
         private static void Center() //centralizar
         {
@@ -120,7 +120,7 @@ namespace RITSU
            //if (verificarProcesso("WINWORD.EXE"))
             //{
                 FocusWord();
-                KeyBoard_Simulator.ctrl_O();
+                KeyBoard_Simulator.ctrl_N();
                 Speaker.Speak("Novo documento");
            //}
             //else 
@@ -133,7 +133,7 @@ namespace RITSU
             //if (verificarProcesso("WINWORD.EXE"))
             //{
                 FocusWord();
-                KeyBoard_Simulator.ctrl_S();
+                KeyBoard_Simulator.ctrl_B();
                 Speaker.Speak("Salvando documento");
             //}
         }
@@ -176,7 +176,8 @@ namespace RITSU
         public static void WordItalic()
         {
             FocusWord();
-            Italic();
+            //Italic();
+            KeyBoard_Simulator.ctrl_I();
         }
         public static void WordUnderline()
         {

@@ -3,9 +3,9 @@ gerenciador de tarefas
 minhas pastas
 limpeza de disco
 gerenciamento de computador
-definir programas padrão
+definir programas padrao
 painel de controle
 desfragmentador de disco
 gerenciador de dispositivos
-discagem telefônica
+discagem telefonica
 gerenciamento de disco
