@@ -34,6 +34,7 @@
             this.comandosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.softwareToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listCommands = new System.Windows.Forms.ListBox();
+            this.emailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,7 +47,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.comandosToolStripMenuItem,
-            this.softwareToolStripMenuItem});
+            this.softwareToolStripMenuItem,
+            this.emailToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(272, 24);
@@ -82,6 +84,13 @@
             this.listCommands.TabIndex = 2;
             this.listCommands.Visible = false;
             // 
+            // emailToolStripMenuItem
+            // 
+            this.emailToolStripMenuItem.Name = "emailToolStripMenuItem";
+            this.emailToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.emailToolStripMenuItem.Text = "&Email";
+            this.emailToolStripMenuItem.Click += new System.EventHandler(this.emailToolStripMenuItem_Click);
+            // 
             // HelpCommands
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -106,5 +115,6 @@
         private System.Windows.Forms.ToolStripMenuItem comandosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem softwareToolStripMenuItem;
         private System.Windows.Forms.ListBox listCommands;
+        private System.Windows.Forms.ToolStripMenuItem emailToolStripMenuItem;
     }
 }

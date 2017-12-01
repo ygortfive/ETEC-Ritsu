@@ -1,6 +1,16 @@
 <aiml>
 
 <category>
+<pattern>Ritsu me ajuda a apresentar</pattern>
+<template>Não, seu professor acha que sou um pokemon.</template>
+</category>
+
+<category>
+<pattern>Por favor ele nao sabe de nada</pattern>
+<template>Ok, vamos lá. Como posso ajudar?</template>
+</category>
+
+<category>
 <pattern>Qual foi um dos grandes problemas que identificamos</pattern>
 <template>Mesmo com a queda no custo dos computadores ainda não temos adaptaçoes mais acessiveis as pessoas com deficiencia ou idosos. Fui desenvolvida afim de melhorar a inserçao desse público ao mundo da infomatica, mas claro que esse é só o primeiro passo.</template>
 </category>
@@ -42,7 +52,7 @@ Contudo, dados resgatados do email do usuário são salvos em um banco de dado e
 
 <category>
 <pattern>Obrigado por nos dar mais detalhes sobre voce</pattern>
-<template>Imagina, estou aqui para auxiliar. Só não espalha para muita gente. KKKKK</template>
+<template>Imagina, estou aqui para auxiliar. Só não espalha para muita gente. KKKKK</template>3
 </category>
 
 </aiml>

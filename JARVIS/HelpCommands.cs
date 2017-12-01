@@ -43,6 +43,18 @@ namespace RITSU
                 listCommands.Items.Add(x);
             }
         }
+
+        private void emailToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            listCommands.Items.Clear();
+            path = "choices\\cEmail.txt";
+            string[] cmds = File.ReadAllLines(path, Encoding.UTF8);
+            listCommands.Visible = true;
+            foreach (string x in cmds)
+            {
+                listCommands.Items.Add(x);
+            }
+        }
        
     }
 }
