@@ -1,0 +1,44 @@
+Sejam muito bem vindos a feira de projetos da ETEC de Barueri.
+
+Me chamo Ritsu e hoje quero lhes mostrar o que a tecnologia é capaz de fazer.
+
+Fui desenvolvida por essa equipe a sua frente com a intenção de otimizar e auxiliar usuário, principalmente aqueles com deficiencias fisicas ou motoras. 
+
+Mas devem estar se perguntando: "Tá bom Ritsu, muito mimimi, o que você faz? "
+
+Posso fazer tarefas simples como dizer que agora são *dizer horas* de uma *dizer o dia*.
+
+A música que estava tocando eu possuo total controle, vamos ver o que estava tocando.
+* Dar play no media player * 
+*Break de 20s*
+*Pause no media player*
+Não gosto dessa música, vamos para proxima.
+*Proxima no media player* 
+Eu gosto de ouvir
+*Dizer que musica esta tocando*
+*Break de 20s*
+*Pause no media player*
+
+Possuo um bloco de notas proprio.
+*Abrir bloco de notas *
+*Break 10s*
+*Fechar bloco de notas*
+
+Tenho funções para executar e manipular programas. No momento só possuo funções para o WORD, porém em breve meu leque irá expandir. 
+
+Vamos dar uma olhada nos processos que estão abertos. 
+*Abrir gerenciador de tarefas*
+*Break de 10s*
+Eu tambem possuo o meu gerenciador.
+*Abrir gerenciador de tarefas da ritsu*
+*Break 10s*
+
+Gostaria de olhar suas pastas?
+*Abrir 'minhas pastas'*
+
+E so para finalizar, alguém poderia me enviar um email?
+*Abrir meu email*
+
+
+
+
