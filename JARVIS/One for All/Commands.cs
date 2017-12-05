@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RITSU.One_for_All;
 
 namespace RITSU
 {
@@ -15,6 +16,8 @@ namespace RITSU
         //private static AddNewCommand addNewCommand = null; // janela de comandos
         private static ProcessList processList = null;
         private static Notepad notepad = null; //bloco de notas
+        private static ApresentacaoFinal Apresentacao = new ApresentacaoFinal();
+
         public static void Execute(string cmd) // método estático
         {
             DateTime time = DateTime.Now;
@@ -450,6 +453,11 @@ namespace RITSU
                 case "ver email":
                     ApplicationEmail email = new ApplicationEmail();
                     email.ShowDialog();
+                    break;
+
+            //Apresentação TCC
+                case "fale com o publico":
+                    Apresentacao.FinalShow();
                     break;
             }
         }

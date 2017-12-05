@@ -87,6 +87,7 @@
     <Compile Include="One for All\ActionProcess.cs" />
     <Compile Include="One for All\ActionSoftwares.cs" />
     <Compile Include="One for All\AIML.cs" />
+    <Compile Include="One for All\ApresentacaoFinal.cs" />
     <Compile Include="One for All\Calculation.cs" />
     <Compile Include="One for All\ComandsArduino.cs" />
     <Compile Include="One for All\Commands.cs" />

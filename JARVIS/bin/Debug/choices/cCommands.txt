@@ -42,6 +42,7 @@ word sublinhado
 word centralizar
 word desfazer
 word refazer
+fale com o publico
 em quanto estar o uso do processador?
 quanta memoria ram estar sendo usada?
 quanta memoria ram ainda ha livre?

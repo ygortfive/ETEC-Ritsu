@@ -218,8 +218,8 @@ namespace RITSU
         private void Form1_Load(object sender, EventArgs e)
         {
             LoadSpeech();
-            Speak("Olá, estou pronta para te ajudar! ");
-            Speak("Se não souber por onde começar diga: lista de comandos");
+            //Speak("Olá, estou pronta para te ajudar! ");
+            //Speak("Se não souber por onde começar diga: lista de comandos");            
             AIML.ConfigAIMLFiles();
             alterarBack();
             
